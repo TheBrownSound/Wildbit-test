@@ -1,0 +1,87 @@
+// Text size adjust
+
+@mixin text-size-adjust($tsa) {
+	$tsa: unquote($tsa);
+
+	-webkit-text-size-adjust: $tsa;
+	-moz-text-size-adjust: $tsa;
+	-ms-text-size-adjust: $tsa;
+	text-size-adjust: $tsa;
+}
+
+
+// Hyphens
+
+@mixin hyphens($value: auto) {
+	-webkit-hyphens: $value;
+	-moz-hyphens: $value;
+	hyphens: $value;
+}
+
+
+// Appearance
+
+@mixin appearance ($value) {
+	-webkit-appearance: $value;
+	   -moz-appearance: $value;
+	        appearance: $value;
+}
+
+
+// Box Sizing
+
+@mixin box-sizing ($type) {
+	-webkit-box-sizing: $type;
+	   -moz-box-sizing: $type;
+	        box-sizing: $type;
+}
+
+
+// Border Radius
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	   -moz-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+
+// Linear gradient
+
+@mixin linear-gradient($from, $to) {
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background-image: -webkit-linear-gradient(top, $from, $to);
+	background-image:    -moz-linear-gradient(top, $from, $to);
+	background-image:     -ms-linear-gradient(top, $from, $to);
+	background-image:      -o-linear-gradient(top, $from, $to);
+	background-image:         linear-gradient(to bottom, $from, $to);
+}
+
+
+// Box shadow
+
+@mixin box-shadow($value...) {
+	-webkit-box-shadow: $value;
+	   -moz-box-shadow: $value;
+	        box-shadow: $value;
+}
+
+
+// Transition
+
+@mixin transition ($values) {
+	-webkit-transition: $values;
+	        transition: $values;
+}
+
+
+// @media queries
+
+@mixin retina {
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	       only screen and    (min--moz-device-pixel-ratio: 1.5),
+	       only screen and      (-o-min-device-pixel-ratio: 3/2),
+	       only screen and         (min-device-pixel-ratio: 1.5) {
+		@content;
+	}
+}

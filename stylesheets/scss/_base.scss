@@ -1,0 +1,77 @@
+/* Global Styles
+============================== */
+
+body {
+	background-color: #FFF;
+	color: $c-brown;
+	line-height: 1.4;
+}
+
+// Links
+
+a:link {
+	color: $c-link;
+}
+a:visited {
+	color: $c-brown;
+}
+a:hover,
+a:active {
+	color: $c-link-hover;
+}
+
+// Headers
+
+h1 {
+	margin: 1em 0 .4em;
+	color: #000;
+	font-size: 1.6em;
+}
+h2 {
+	margin: 1em 0 .75em;
+	color: #000;
+	font-size: 1.2em;
+}
+h3 {
+	margin: 1em 0 .4em;
+	font-size: 1.1em;
+}
+
+// Text
+
+p,
+ul,
+ol {
+	margin: .2em 0 1em;
+}
+ul,
+ol {
+	margin-left: 2.1em;
+}
+	li {
+		margin-bottom: .75em;
+	}
+	ul li {
+		list-style: disc;
+	}
+	ol li {
+		list-style: decimal;
+	}
+
+// Horizontal Rule
+
+hr {
+	height: 0;
+	margin: 30px 0;
+	border-top: 1px solid #EEE;
+	padding: 0;
+}
+
+// Document changes
+
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}

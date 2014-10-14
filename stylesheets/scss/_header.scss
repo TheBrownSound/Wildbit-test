@@ -1,0 +1,94 @@
+/* Header
+============================== */
+
+header {
+	position: relative;
+}
+
+body > header {
+	background-color: $c-brown-dark;
+
+	.container {
+		position: relative;
+		background: url(../images/bg-header-pattern-plain.png) no-repeat 50% 0;
+	}
+	b.cl,
+	b.cr {
+		position: absolute;
+		bottom: -19px;
+		width: 20px;
+		height: 19px;
+		background-image: url(../images/bg-corners-header.png);
+		background-repeat: no-repeat;
+	}
+	b.cl {
+		left: 0;
+		background-position: -19px 0;
+	}
+	b.cr {
+		right: 0;
+		background-position: 0 0;
+	}
+	b.leaf {
+		position: absolute;
+		top: 0;
+		right: 10%;
+		width: 132px;
+		height: 39px;
+		background: url(../images/leaf.png) no-repeat 0 0;
+	}
+}
+body > header.alternative {
+	height: 150px;
+
+	.container {
+		height: 90px;
+		background-position: 50% -120px;
+	}
+	hgroup {
+		top: -20px;
+	}
+	hgroup h1 {
+		width: 260px;
+		height: 87px;
+		background-image: url(../images/logo-med.png);
+
+		@include retina {
+			background-image: url(../images/logo-med@2x.png);
+			background-size: 260px 87px;
+		}
+	}
+}
+
+	/* Logo */
+
+	body > header hgroup {
+		position: absolute;
+		top: -15px;
+		left: 0;
+		width: 100%;
+
+		h1,
+		h2 {
+			width: 353px;
+			margin: 0 auto;
+			background-image: url(../images/logo.png);
+			background-repeat: no-repeat;
+			text-indent: -9999em;
+			font-size: .8em;
+			overflow: hidden;
+		}
+		h1 {
+			height: 110px;
+			background-position: 0 0;
+		}
+		h2 {
+			height: 71px;
+			background-position: 0 -110px;
+		}
+		a {
+			display: block;
+			height: 100%;
+			margin-top: 20px;
+		}
+	}

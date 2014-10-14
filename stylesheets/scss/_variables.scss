@@ -1,0 +1,54 @@
+// Typography
+
+$f-sansserif:   'Helvetica Neue', Arial, Helvetica, sans-serif;
+$f-serif:        Georgia, 'Times New Roman', Times, serif;
+$f-monospace:    Monaco, Consolas, 'Lucida Console', 'Courier New', Courier, monospace, serif;
+$f-accent:      'ff-cocon-web-pro', $f-sansserif;
+$f-handwritten: 'felt-tip-roman', cursive;
+
+
+// Colors
+
+$c-link:                #069;
+$c-link-hover:          #39C;
+
+$c-brown-lightest:      #EFEFF1;
+$c-brown-text:          #A6A084;
+$c-brown:               #534B38;
+$c-brown-dark:          #2D2614;
+
+$c-green-light:         #B3D8B6;
+$c-green:               #51B166;
+$c-green-dark:          #389458;
+$c-green-darkest:       #005438;
+
+$c-olive-light:         #EFF5EE;
+$c-olive:               #D7E7DB;
+$c-olive-dark:          #899A84;
+
+$c-lime:                #DBFF6C;
+
+$c-yellow-lightest:     #F2FFCC;
+$c-yellow:              #FC0;
+
+$c-orange:              #C60;
+
+$c-blue-light:          #E1F1FA;
+
+$c-good:                #0F7C14;
+$c-bad:                 #B00;
+
+$c-form-focus-bg:       #F9FFE5;
+$c-form-focus-border:   #79AD90;
+
+$c-form-error-dark:     #730B0B;
+$c-form-error-bg:       #FDF5F5;
+$c-form-error:          #B33640;
+
+
+// Spring
+
+$c-spring-bg:           #CEE7CA;
+$c-spring-green:        #83A990;
+
+$central-field:         60%;

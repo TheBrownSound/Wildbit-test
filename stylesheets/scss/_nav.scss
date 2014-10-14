@@ -1,0 +1,170 @@
+/* Navigation
+------------------------------ */
+
+nav {
+	overflow: hidden;
+
+	ul {
+		margin: 1.2em auto 0;
+		font-size: .95em;
+		overflow: hidden;
+
+		li {
+			display: inline;
+			margin: 0 10px;
+			list-style: none;
+			text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+			vertical-align: top;
+		}
+			a,
+			a:link,
+			a:visited {
+				color: $c-brown-text;
+				text-decoration: none;				
+				@include transition(color .1s linear);
+			}
+			a:hover,
+			a:active {
+				color: #FFE !important;
+			}
+			strong {
+				color: $c-yellow;
+
+				a {
+					color: $c-yellow !important;
+				}
+			}
+
+
+		/* Sign In & Sign Up */
+		
+		li.link-signin {
+
+			a {
+				color: #B2F8AF;
+				font-weight: bold;
+			}
+		}
+
+		li.link-signup {
+			padding-left: 30px;
+			background: url(../images/i-bullet-nav.png) no-repeat 0 50%;
+
+			a {
+				color: $c-lime;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+
+/* Primary & Utility */
+
+nav#primary {
+	height: 60px;
+	background: $c-brown-dark url(../images/bg-nav.png) repeat-x 0 100%;
+	text-align: center;
+}
+nav#utility {
+	position: absolute;
+	top: 0;
+	right: 20px;
+}
+
+
+/* Support */
+
+nav#support {
+	position: absolute;
+	top: 9px;
+	right: 86px;
+	width: 190px;
+	@include border-radius(5px);
+	background: #FFF url(../images/bg-header-pattern.png) no-repeat 62% 38%;
+	text-align: left;
+	z-index: 100;	
+	@include box-shadow(0 4px 12px rgba(0, 0, 0, .6));
+
+	ul {
+		margin: 0;
+
+		li {
+			display: block;
+			margin: 0 !important;
+			border-bottom: 1px dotted #DDD;
+			padding: .75em 1em !important;
+			color: #FFF;
+			font-size: .85em;
+			text-shadow: 0 1px 0 #FFF;
+
+			strong {
+				display: block;
+				color: #999;
+				font-weight: normal;
+				font-size: 1.15em;
+				text-align: right;
+				cursor: help;
+			}
+			a {
+				display: block;
+				color: #000 !important;
+				font-weight: bold;
+				text-decoration: none;
+				@include transition(color .1s linear);
+
+				&:hover {
+					color: $c-link !important;
+				}
+				span {
+					display: block;
+					color: #999;
+					font-weight: normal;
+					font-size: .85em;
+				}
+			}
+		}
+
+		li.link-chat {
+			border: 0;
+
+			a em {
+				margin-left: .75em;
+				padding: .1em .5em;
+				@include border-radius(50px);
+				color: #FFF;
+				font-style: normal;
+				font-weight: normal;
+				font-size: .8em;
+				text-shadow: 0 1px 0 rgba(0, 0, 0, .2);
+				text-transform: uppercase;
+			}
+			a em.sign-closed 	{ background-color: $c-bad; }
+			a em.sign-open 		{ background-color: $c-green; }
+		
+			&.status-offline a {
+				color: #999 !important;
+				cursor: default;
+			}
+			&.status-offline a em.sign-open,
+			&.status-online a em.sign-closed {
+				display: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1080px) {
+	nav#primary ul {
+		width: 960px;
+		text-align: left;
+	}
+	nav#utility,
+	nav#support {
+		right: 50%;
+		margin-right: -480px;
+	}
+	nav#support ul li strong {
+		text-align: left;
+	}
+}
