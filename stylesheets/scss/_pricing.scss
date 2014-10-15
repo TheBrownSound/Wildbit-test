@@ -13,7 +13,9 @@ $s-pricing-default: 10px;
 	width: 50%;
 
 	h1 {
+		font-size: 1.2em;
 		font-weight: normal;
+		margin: 0 $s-pricing-default $s-pricing-default;
 	}
 
 	&:after {

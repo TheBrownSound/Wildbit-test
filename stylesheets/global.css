@@ -733,7 +733,9 @@ footer #help small,
   padding: 0;
   width: 50%; }
   .plans h1 {
-    font-weight: normal; }
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0 10px 10px; }
   .plans:after {
     content: "";
     display: table;
