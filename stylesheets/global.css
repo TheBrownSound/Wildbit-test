@@ -813,10 +813,10 @@ footer #help small,
     -moz-border-radius-topright: 23px;
     border-top-left-radius: 23px;
     border-top-right-radius: 23px; }
-  #pricing-new .plans-lineup {
+  #pricing-new .container {
     position: relative;
-    top: -40px;
-    margin-bottom: -40px; }
+    top: -30px;
+    margin-bottom: -30px; }
   #pricing-new .free,
   #pricing-new .bronze,
   #pricing-new .silver,
@@ -1001,16 +1001,20 @@ footer #help small,
       -moz-box-shadow: inset 0 0 4px white, 0 0 0 4px rgba(0, 0, 0, 0.1);
       box-shadow: inset 0 0 4px white, 0 0 0 4px rgba(0, 0, 0, 0.1); }
   #pricing-new .referral-notice {
-    margin: -10px 0 0;
+    margin: 20px 0;
     padding: 0;
     text-align: center; }
     #pricing-new .referral-notice strong {
       display: inline-block;
       padding: .6em 1.5em .75em;
-      -webkit-border-radius: 0 0 3px 3px;
-      -moz-border-radius: 0 0 3px 3px;
-      border-radius: 0 0 3px 3px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
       background-color: #FFEE66;
+      border: 1px solid #fff499;
       color: #4D4636;
       font-weight: bold;
       font-size: 1.1em;
