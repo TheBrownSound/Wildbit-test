@@ -4,7 +4,8 @@
 /* Plan Labels */
 
 #pricing-new {
-	
+
+.free,
 .bronze,
 .silver,
 .gold,
@@ -21,7 +22,7 @@
 	@include box-shadow(0 1px 2px rgba(0, 0, 0, .4));
 }
 
-.free     { background-color: #FAEED7; color: #85562C; }
+.free     { background-color: #9ECCFF; color: #205378; }
 .bronze   { background-color: #FAEED7; color: #85562C; }
 .silver   { background-color: #EEEEEE; color: #555555; }
 .gold     { background-color: #FFF7B1; color: #7B6E00; }

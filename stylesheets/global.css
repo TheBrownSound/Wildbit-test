@@ -733,6 +733,7 @@ footer #help small,
   /* Page title */
   /* Trial */
   /* Features List */ }
+  #pricing-new .free,
   #pricing-new .bronze,
   #pricing-new .silver,
   #pricing-new .gold,
@@ -752,8 +753,8 @@ footer #help small,
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); }
   #pricing-new .free {
-    background-color: #FAEED7;
-    color: #85562C; }
+    background-color: #9ECCFF;
+    color: #205378; }
   #pricing-new .bronze {
     background-color: #FAEED7;
     color: #85562C; }
