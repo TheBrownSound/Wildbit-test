@@ -3,6 +3,8 @@
 
 /* Plans layout */
 
+$s-pricing-default: 10px;
+
 .plans {
 	float: left;
 	display: inline-block;
@@ -22,6 +24,25 @@
 	width: 33.33%;
 }
 
+.plan {
+	margin-right: -1px;
+	border: 1px solid $c-grey;
+	padding: $s-pricing-default;
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+		}
+	}
+}
+
+.link-custom-plans {
+	display: block;
+	clear: both;
+}
 
 /* Plan Labels */
 

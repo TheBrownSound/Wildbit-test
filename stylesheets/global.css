@@ -741,6 +741,20 @@ footer #help small,
   float: left;
   width: 33.33%; }
 
+.plan {
+  margin-right: -1px;
+  border: 1px solid #cccccc;
+  padding: 10px; }
+  .plan ul {
+    margin: 0;
+    padding: 0; }
+    .plan ul li {
+      list-style: none; }
+
+.link-custom-plans {
+  display: block;
+  clear: both; }
+
 /* Plan Labels */
 #pricing-new {
   /* 15-day Guarantee Ribbon */
