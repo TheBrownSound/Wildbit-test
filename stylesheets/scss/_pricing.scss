@@ -15,7 +15,7 @@ $s-pricing-default: 10px;
 	h1 {
 		font-size: 1.2em;
 		font-weight: normal;
-		margin: 0 $s-pricing-default $s-pricing-default;
+		margin: 0 $s-pricing-default $s-pricing-default * 4;
 	}
 
 	&:after {
@@ -31,6 +31,7 @@ $s-pricing-default: 10px;
 }
 
 .plan {
+	background-color: #FFFFFF;
 	margin-right: -1px;
 	border: 1px solid $c-grey;
 	padding: 0 $s-pricing-default $s-pricing-default;
@@ -54,42 +55,97 @@ $s-pricing-default: 10px;
 	clear: both;
 }
 
-/* Plan Labels */
-
 #pricing-new {
+	$header-height: 220px;
+	$header-bleed: 40px;
 
-.free,
-.bronze,
-.silver,
-.gold,
-.platinum,
-.diamond {
-	display: inline-block;
-	position: relative;
-	padding: 0 .4em 1px;
-	@include border-radius(2px);
-	font-weight: bold;
-	font-size: 11px;
-	text-shadow: 0 1px 0 #FFF;
-	text-transform: uppercase;
-	@include box-shadow(0 1px 2px rgba(0, 0, 0, .4));
-}
+	/* Plans header */
+	.plans-head {
+		position: relative;
+		text-align: center;
+		background: #e2f7cd url(../images/bg-page-pattern.png) no-repeat 50% -11px;
+		height: $header-height - $header-bleed;
+		padding: $header-bleed 0 0;
 
-.free     { background-color: #9ECCFF; color: #205378; }
-.bronze   { background-color: #FAEED7; color: #85562C; }
-.silver   { background-color: #EEEEEE; color: #555555; }
-.gold     { background-color: #FFF7B1; color: #7B6E00; }
-.platinum { background-color: #F3FBFF; color: #516672; }
-.diamond  { background-color: #D7FAFF; color: #10545E; }
+		h1 {
+			margin: 0 0.2em;
+			padding: 0;
+			color: #064;
+			text-shadow: 0 1px 1px #FFF;
+			-webkit-font-smoothing: antialiased;
+			font-size: 30px;
+			font-weight: normal;
+		}
+		h2 {
+			margin: 0;
+			padding: 0;
+			color: #6A8066;
+			font-weight: normal;
+			font-size: 1.15em;
 
-.diamond i {
-	display: block;
-	position: absolute;
-	top: -4px;
-	left: -4px;
-	width: 14px;
-	height: 14px;
-	background: url(../images/i-blink.png) no-repeat 0 0;
+			a {
+				color: $c-green-dark;
+			}
+		}
+	}
+
+	.page.top {
+		$container-radius: 23px;
+
+		margin-top: - $header-bleed;
+
+		background-color: #FFF;
+		background-position: 50% $container-radius - $header-height;
+		position: relative;
+		padding: 0;
+		width: 100%;
+
+		-webkit-border-top-left-radius: $container-radius;
+		-webkit-border-top-right-radius: $container-radius;
+		-moz-border-radius-topleft: $container-radius;
+		-moz-border-radius-topright: $container-radius;
+		border-top-left-radius: $container-radius;
+		border-top-right-radius: $container-radius;
+	}
+
+	.plans-lineup {
+		position: relative;
+		top: - $header-bleed;
+	}
+
+	/* Plan Labels */
+	.free,
+	.bronze,
+	.silver,
+	.gold,
+	.platinum,
+	.diamond {
+		display: inline-block;
+		position: relative;
+		padding: 0 .4em 1px;
+		@include border-radius(2px);
+		font-weight: bold;
+		font-size: 11px;
+		text-shadow: 0 1px 0 #FFF;
+		text-transform: uppercase;
+		@include box-shadow(0 1px 2px rgba(0, 0, 0, .4));
+	}
+
+	.free     { background-color: #9ECCFF; color: #205378; }
+	.bronze   { background-color: #FAEED7; color: #85562C; }
+	.silver   { background-color: #EEEEEE; color: #555555; }
+	.gold     { background-color: #FFF7B1; color: #7B6E00; }
+	.platinum { background-color: #F3FBFF; color: #516672; }
+	.diamond  { background-color: #D7FAFF; color: #10545E; }
+
+	.diamond i {
+		display: block;
+		position: absolute;
+		top: -4px;
+		left: -4px;
+		width: 14px;
+		height: 14px;
+		background: url(../images/i-blink.png) no-repeat 0 0;
 }
 
 
@@ -247,37 +303,6 @@ $s-pricing-default: 10px;
 			color: #888;
 			line-height: 1.5;
 		}
-}
-
-
-/* Page title */
-
-.page-title {
-	margin: 35px 0 25px;
-	overflow: hidden;
-
-	h1,
-	h2 {
-		margin: 0;
-		border: 0;
-		padding: 0;
-		text-align: center;
-	}
-	h1 {
-		color: #000;
-		font-size: 30px;
-		font-weight: normal;
-	}
-	h2 {
-		margin-top: .2em;
-		color: #444;
-		font-weight: normal;
-		font-size: 18px;
-
-		a {
-			color: $c-green-dark;
-		}
-	}
 }
 
 	/* Features List */
