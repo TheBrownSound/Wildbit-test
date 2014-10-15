@@ -12,6 +12,10 @@ $s-pricing-default: 10px;
 	padding: 0;
 	width: 50%;
 
+	h1 {
+		font-weight: normal;
+	}
+
 	&:after {
 		content: "";
 		display: table;
@@ -27,7 +31,11 @@ $s-pricing-default: 10px;
 .plan {
 	margin-right: -1px;
 	border: 1px solid $c-grey;
-	padding: $s-pricing-default;
+	padding: 0 $s-pricing-default $s-pricing-default;
+
+	.plan-name {
+		margin-top: -$s-pricing-default;
+	}
 
 	ul {
 		margin: 0;
@@ -108,7 +116,7 @@ $s-pricing-default: 10px;
 
 
 .square-button {
-	display: inline-block;
+	display: block;
 	border-width: 1px !important;
 	border-style: solid;
 	@include border-radius(2px);

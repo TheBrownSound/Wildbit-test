@@ -732,6 +732,8 @@ footer #help small,
   margin: 0;
   padding: 0;
   width: 50%; }
+  .plans h1 {
+    font-weight: normal; }
   .plans:after {
     content: "";
     display: table;
@@ -744,7 +746,9 @@ footer #help small,
 .plan {
   margin-right: -1px;
   border: 1px solid #cccccc;
-  padding: 10px; }
+  padding: 0 10px 10px; }
+  .plan .plan-name {
+    margin-top: -10px; }
   .plan ul {
     margin: 0;
     padding: 0; }
@@ -826,7 +830,7 @@ footer #help small,
     line-height: normal;
     text-indent: -9999em; }
   #pricing-new .square-button {
-    display: inline-block;
+    display: block;
     border-width: 1px !important;
     border-style: solid;
     -webkit-border-radius: 2px;
