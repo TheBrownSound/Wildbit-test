@@ -809,12 +809,9 @@ footer #help small,
     position: relative;
     padding: 0;
     width: 100%;
-    -webkit-border-top-left-radius: 23px;
-    -webkit-border-top-right-radius: 23px;
-    -moz-border-radius-topleft: 23px;
-    -moz-border-radius-topright: 23px;
-    border-top-left-radius: 23px;
-    border-top-right-radius: 23px; }
+    -webkit-border-radius: 23px 23px 0 0;
+    -moz-border-radius: 23px 23px 0 0;
+    border-radius: 23px 23px 0 0; }
   #pricing-new .container {
     position: relative;
     top: -30px;

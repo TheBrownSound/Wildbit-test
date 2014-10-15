@@ -108,12 +108,7 @@ $s-pricing-default: 10px;
 		padding: 0;
 		width: 100%;
 
-		-webkit-border-top-left-radius: $container-radius;
-		-webkit-border-top-right-radius: $container-radius;
-		-moz-border-radius-topleft: $container-radius;
-		-moz-border-radius-topright: $container-radius;
-		border-top-left-radius: $container-radius;
-		border-top-right-radius: $container-radius;
+		@include border-radius($container-radius $container-radius 0 0)
 	}
 
 	.container {
