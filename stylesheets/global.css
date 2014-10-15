@@ -782,7 +782,7 @@ footer #help small,
     position: relative;
     text-align: center;
     background: #e2f7cd url(../images/bg-page-pattern.png) no-repeat 50% -11px;
-    height: 180px;
+    height: 160px;
     padding: 40px 0 0; }
     #pricing-new .plans-head h1 {
       margin: 0 0.2em;
@@ -803,7 +803,7 @@ footer #help small,
   #pricing-new .page.top {
     margin-top: -40px;
     background-color: #FFF;
-    background-position: 50% -197px;
+    background-position: 50% -177px;
     position: relative;
     padding: 0;
     width: 100%;
