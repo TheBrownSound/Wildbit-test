@@ -30,5 +30,5 @@ Other pricing/plan pages:
 
 Compile and watch stylesheets:
 ```
-sass --watch stylesheets/scss:stylesheets
+sass --watch stylesheets/scss/global.scss:stylesheets/global.css
 ```
