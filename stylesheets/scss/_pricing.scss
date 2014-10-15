@@ -9,11 +9,17 @@
 	margin: 0;
 	padding: 0;
 	width: 50%;
+
 	&:after {
 		content: "";
 		display: table;
 		clear: both;
 	}
+}
+
+.plan {
+	float: left;
+	width: 33.33%;
 }
 
 

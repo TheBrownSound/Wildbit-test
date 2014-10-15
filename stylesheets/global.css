@@ -737,6 +737,10 @@ footer #help small,
     display: table;
     clear: both; }
 
+.plan {
+  float: left;
+  width: 33.33%; }
+
 /* Plan Labels */
 #pricing-new {
   /* 15-day Guarantee Ribbon */
