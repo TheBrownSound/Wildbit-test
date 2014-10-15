@@ -12,16 +12,12 @@ $s-pricing-default: 10px;
 	padding: 0;
 	width: 50%;
 
+	@include clearfix;
+
 	h1 {
 		font-size: 1.2em;
 		font-weight: normal;
 		margin: 0 $s-pricing-default / 2 $s-pricing-default * 4;
-	}
-
-	&:after {
-		content: "";
-		display: table;
-		clear: both;
 	}
 }
 
@@ -325,12 +321,7 @@ $s-pricing-default: 10px;
 	.features-list {
 		margin: 60px 0 40px;
 		color: #222;
-
-		&:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
+		@include clearfix;
 
 		.plan-standard {
 			display: inline-block;
