@@ -737,7 +737,7 @@ footer #help small,
     display: table;
     clear: both; }
 
-.plan {
+.plan-wrap {
   float: left;
   width: 33.33%; }
 
