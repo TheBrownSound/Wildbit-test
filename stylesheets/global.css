@@ -725,13 +725,19 @@ footer #help small,
 
 /* Pricing
 ============================== */
+/* Plans layout */
+.plans {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 50%; }
+
 /* Plan Labels */
 #pricing-new {
   /* 15-day Guarantee Ribbon */
   /* Referral notice */
   /* FAQ */
   /* Page title */
-  /* Trial */
   /* Features List */ }
   #pricing-new .free,
   #pricing-new .bronze,
@@ -958,7 +964,8 @@ footer #help small,
       text-align: center; }
     #pricing-new .page-title h1 {
       color: #000;
-      font-size: 30px; }
+      font-size: 30px;
+      font-weight: normal; }
     #pricing-new .page-title h2 {
       margin-top: .2em;
       color: #444;
@@ -966,13 +973,6 @@ footer #help small,
       font-size: 18px; }
       #pricing-new .page-title h2 a {
         color: #389458; }
-  #pricing-new .trial-signup {
-    margin: 50px 0;
-    text-align: center; }
-    #pricing-new .trial-signup p {
-      display: block;
-      margin-top: 1.25em;
-      color: #7A7A7A; }
   #pricing-new .features-list {
     margin: 60px 0 40px;
     color: #222; }
