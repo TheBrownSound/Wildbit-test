@@ -784,8 +784,8 @@ footer #help small,
     position: relative;
     text-align: center;
     background: #e2f7cd url(../images/bg-page-pattern.png) no-repeat 50% -11px;
-    height: 360px;
-    padding: 40px 0 0; }
+    height: 364px;
+    padding: 36px 0 0; }
     #pricing-new .plans-head h1 {
       margin: 0 0.2em;
       padding: 0;
@@ -809,21 +809,24 @@ footer #help small,
       height: 43px;
       top: 0;
       left: 50%;
-      margin-left: 300px; }
+      margin-left: 340px; }
   #pricing-new .page.top {
-    margin-top: -120px;
+    margin-top: -130px;
     background-color: #FFF;
     background-position: 50% -377px;
     position: relative;
     padding: 0;
     width: 100%;
+    -webkit-box-shadow: 0px 0px 3px #b3d8b6;
+    -moz-box-shadow: 0px 0px 3px #b3d8b6;
+    box-shadow: 0px 0px 3px #b3d8b6;
     -webkit-border-radius: 23px 23px 0 0;
     -moz-border-radius: 23px 23px 0 0;
     border-radius: 23px 23px 0 0; }
     #pricing-new .page.top .container {
       position: relative;
-      top: -120px;
-      margin-bottom: -120px; }
+      top: -130px;
+      margin-bottom: -130px; }
   #pricing-new .free,
   #pricing-new .bronze,
   #pricing-new .silver,
@@ -844,8 +847,8 @@ footer #help small,
     -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4); }
   #pricing-new .free {
-    background-color: #9ECCFF;
-    color: #205378; }
+    background-color: #b3d8b6;
+    color: #005438; }
   #pricing-new .bronze {
     background-color: #FAEED7;
     color: #85562C; }

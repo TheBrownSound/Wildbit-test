@@ -65,8 +65,8 @@ $s-pricing-default: 10px;
 
 #pricing-new {
 	$header-height: 400px;
-	$header-padding: 40px;
-	$header-bleed: 120px;
+	$header-padding: 36px;
+	$header-bleed: 130px;
 
 	/* Plans header */
 	.plans-head {
@@ -104,7 +104,7 @@ $s-pricing-default: 10px;
 			height: 43px;
 			top: 0;
 			left: 50%;
-			margin-left: 300px; 
+			margin-left: 340px;
 		}
 	}
 
@@ -119,6 +119,7 @@ $s-pricing-default: 10px;
 		padding: 0;
 		width: 100%;
 
+		@include box-shadow(0px 0px 3px $c-green-light);
 		@include border-radius($container-radius $container-radius 0 0);
 
 		.container {
@@ -148,7 +149,7 @@ $s-pricing-default: 10px;
 		@include box-shadow(0 1px 2px rgba(0, 0, 0, .4));
 	}
 
-	.free     { background-color: #9ECCFF; color: #205378; }
+	.free     { background-color: $c-green-light; color: $c-green-darkest; }
 	.bronze   { background-color: #FAEED7; color: #85562C; }
 	.silver   { background-color: #EEEEEE; color: #555555; }
 	.gold     { background-color: #FFF7B1; color: #7B6E00; }
