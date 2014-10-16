@@ -804,17 +804,6 @@ footer #help small,
       #pricing-new .plans.plans-business .plan-wrap {
         float: left;
         width: 33.33%; }
-      #pricing-new .plans.plans-business .features-extra {
-        display: block;
-        margin: 0 20px 10px;
-        padding: 10px;
-        font-size: 0.8rem;
-        border: 1px solid #cccccc;
-        -webkit-border-radius: 0 0 10px 10px;
-        -moz-border-radius: 0 0 10px 10px;
-        border-radius: 0 0 10px 10px; }
-        #pricing-new .plans.plans-business .features-extra h2 {
-          color: #595959; }
       #pricing-new .plans.plans-business:before {
         content: url(../images/leaf-rs.png);
         position: absolute;
@@ -1063,33 +1052,40 @@ footer #help small,
       font-weight: bold;
       font-size: 1.1em;
       line-height: normal; }
-  #pricing-new .features-list {
+  #pricing-new .features {
     margin-bottom: 40px;
     color: #222; }
-    #pricing-new .features-list .features-standard li {
-      float: left;
-      width: 25%; }
-      #pricing-new .features-list .features-standard li:before {
-        content: url("../images/i-checkmark-grey.svg");
-        margin-right: 4px;
-        width: 11px;
-        height: 10px;
-        display: inline-block; }
-      #pricing-new .features-list .features-standard li.no-svg:before {
-        content: url("../images/i-checkmark-grey.png"); }
-      #pricing-new .features-list .features-standard li.no-bullet:before {
-        content: "";
-        width: 0;
-        height: 0;
-        padding-left: 0;
-        background-image: none; }
-    #pricing-new .features-list ul {
+    #pricing-new .features ul {
       margin: 0;
       overflow: hidden; }
-      #pricing-new .features-list ul li {
+      #pricing-new .features ul li {
         margin: .3em 0 .6em;
         padding: 0;
         list-style: none; }
+  #pricing-new .features-standard li {
+    float: left;
+    width: 25%; }
+    #pricing-new .features-standard li:before {
+      content: url("../images/i-checkmark-grey.svg");
+      margin-right: 4px;
+      width: 11px;
+      height: 10px;
+      display: inline-block; }
+    #pricing-new .features-standard li.no-svg:before {
+      content: url("../images/i-checkmark-grey.png"); }
+    #pricing-new .features-standard li.no-bullet:before {
+      content: "";
+      width: 0;
+      height: 0;
+      padding-left: 0;
+      background-image: none; }
+  #pricing-new .features-extra {
+    background-color: #eff5ee;
+    border: 1px solid #d7e7db;
+    padding: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
 
 /* FAQ */
 #faq {
