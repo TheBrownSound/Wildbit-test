@@ -75,7 +75,7 @@
 			.plan-wrap {
 				float: left;
 				width: 46%;
-				&.anchor {
+				&.large {
 					width: 54%;
 				}
 			}
@@ -92,12 +92,24 @@
 		}
 
 		&.plans-business {
-
 			width: 58%;
 
 			.plan-wrap {
 				float: left;
 				width: 33.33%;
+			}
+
+			.features-extra {
+				display: block;
+				margin: 0 $s-pricing-default * 2 $s-pricing-default;
+				padding: $s-pricing-default;
+				font-size: 0.8rem;
+				border: 1px solid $c-grey;
+				@include border-radius(0 0 10px 10px);
+
+				h2 {
+					color: #595959;
+				}
 			}
 
 			&:before {
@@ -115,7 +127,7 @@
 	.plan {
 		background-color: lighten($c-green, 43%);
 		border: 1px solid $c-grey;
-		margin: $s-pricing-default * 2 -1px $s-pricing-default * 2 0;
+		margin: $s-pricing-default * 2 -1px 0 0;
 		color: darken($c-olive-dark, 30%);
 		padding: 0 $s-pricing-default $s-pricing-default;
 
@@ -125,6 +137,7 @@
 
 		.plan-price {
 			text-transform: uppercase;
+			margin: $s-pricing-default;
 			strong {
 				font-size: 1.8em;
 				margin-right: 0.1em;
@@ -136,8 +149,9 @@
 		}
 
 		ul {
-			margin: 0;
-			padding: 0 0 $s-pricing-default * 2;
+			margin: $s-pricing-default;
+			padding: 0;
+			min-height: 110px;
 
 			li {
 				list-style: none;
@@ -151,8 +165,13 @@
 			position: relative;
 			z-index: 10;
 			@include box-shadow(0px 0px 2px $c-green);
+
 			.plan-name {
 				margin-top: $s-pricing-default * -1.8;
+			}
+
+			ul {
+				margin-bottom: 40px;
 			}
 		}
 	}
@@ -337,7 +356,7 @@
 		color: #222;
 		@include clearfix;
 
-		.plan-standard {
+		.features-standard {
 			display: inline-block;
 			float: left;
 			width: 55%;
@@ -367,7 +386,7 @@
 			}
 		}
 
-		.plan-extra {
+		.features-extra {
 			display: inline-block;
 			float: left;
 			width: 45%;

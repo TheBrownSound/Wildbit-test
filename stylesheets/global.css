@@ -789,7 +789,7 @@ footer #help small,
       #pricing-new .plans.plans-personal .plan-wrap {
         float: left;
         width: 46%; }
-        #pricing-new .plans.plans-personal .plan-wrap.anchor {
+        #pricing-new .plans.plans-personal .plan-wrap.large {
           width: 54%; }
       #pricing-new .plans.plans-personal:before {
         content: url(../images/leaf-ls.png);
@@ -804,6 +804,17 @@ footer #help small,
       #pricing-new .plans.plans-business .plan-wrap {
         float: left;
         width: 33.33%; }
+      #pricing-new .plans.plans-business .features-extra {
+        display: block;
+        margin: 0 20px 10px;
+        padding: 10px;
+        font-size: 0.8rem;
+        border: 1px solid #cccccc;
+        -webkit-border-radius: 0 0 10px 10px;
+        -moz-border-radius: 0 0 10px 10px;
+        border-radius: 0 0 10px 10px; }
+        #pricing-new .plans.plans-business .features-extra h2 {
+          color: #595959; }
       #pricing-new .plans.plans-business:before {
         content: url(../images/leaf-rs.png);
         position: absolute;
@@ -815,21 +826,23 @@ footer #help small,
   #pricing-new .plan {
     background-color: #e8f5eb;
     border: 1px solid #cccccc;
-    margin: 20px -1px 20px 0;
+    margin: 20px -1px 0 0;
     color: #3f493c;
     padding: 0 10px 10px; }
     #pricing-new .plan .plan-name {
       margin-top: -10px; }
     #pricing-new .plan .plan-price {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin: 10px; }
       #pricing-new .plan .plan-price strong {
         font-size: 1.8em;
         margin-right: 0.1em; }
     #pricing-new .plan strong {
       color: #005438; }
     #pricing-new .plan ul {
-      margin: 0;
-      padding: 0 0 20px; }
+      margin: 10px;
+      padding: 0;
+      min-height: 110px; }
       #pricing-new .plan ul li {
         list-style: none; }
     #pricing-new .plan.prioritize {
@@ -843,6 +856,8 @@ footer #help small,
       box-shadow: 0px 0px 2px #51b166; }
       #pricing-new .plan.prioritize .plan-name {
         margin-top: -18px; }
+      #pricing-new .plan.prioritize ul {
+        margin-bottom: 40px; }
   #pricing-new .link-custom-plans {
     display: block;
     clear: both;
@@ -1057,32 +1072,32 @@ footer #help small,
       height: 0;
       clear: both;
       visibility: hidden; }
-    #pricing-new .features-list .plan-standard {
+    #pricing-new .features-list .features-standard {
       display: inline-block;
       float: left;
       width: 55%; }
-      #pricing-new .features-list .plan-standard li {
+      #pricing-new .features-list .features-standard li {
         float: left;
         width: 50%; }
-        #pricing-new .features-list .plan-standard li:before {
+        #pricing-new .features-list .features-standard li:before {
           content: url("../images/i-checkmark-grey.svg");
           margin-right: 4px;
           width: 11px;
           height: 10px;
           display: inline-block; }
-        #pricing-new .features-list .plan-standard li.no-svg:before {
+        #pricing-new .features-list .features-standard li.no-svg:before {
           content: url("../images/i-checkmark-grey.png"); }
-        #pricing-new .features-list .plan-standard li.no-bullet:before {
+        #pricing-new .features-list .features-standard li.no-bullet:before {
           content: "";
           width: 0;
           height: 0;
           padding-left: 0;
           background-image: none; }
-    #pricing-new .features-list .plan-extra {
+    #pricing-new .features-list .features-extra {
       display: inline-block;
       float: left;
       width: 45%; }
-      #pricing-new .features-list .plan-extra h2, #pricing-new .features-list .plan-extra ul {
+      #pricing-new .features-list .features-extra h2, #pricing-new .features-list .features-extra ul {
         margin-left: 10px; }
     #pricing-new .features-list ul {
       margin: 0;
