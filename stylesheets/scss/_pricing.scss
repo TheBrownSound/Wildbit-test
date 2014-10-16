@@ -116,7 +116,7 @@
 		background-color: lighten($c-green, 43%);
 		border: 1px solid $c-grey;
 		margin: $s-pricing-default * 2 -1px $s-pricing-default * 2 0;
-		color: $c-olive-dark;
+		color: darken($c-olive-dark, 30%);
 		padding: 0 $s-pricing-default $s-pricing-default;
 
 		.plan-name {
