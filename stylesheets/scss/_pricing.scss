@@ -6,6 +6,7 @@
 $s-pricing-default: 10px;
 
 .plans {
+	position: relative;
 	float: left;
 	display: inline-block;
 	margin: 0 0 $s-pricing-default * 2;
@@ -18,6 +19,38 @@ $s-pricing-default: 10px;
 		font-size: 1.2em;
 		font-weight: normal;
 		margin: 0 $s-pricing-default / 2 $s-pricing-default * 2;
+	}
+
+	&.plans-personal {
+		.plan {
+			background-color: lighten($c-green, 46%);
+		}
+
+		&:before {
+			content: url(../images/leaf-ls.png);
+			position: absolute;
+			display: block;
+			width: 48px;
+			height: 75px;
+			left: -48px;
+			bottom: 40px;
+		}
+	}
+
+	&.plans-business {
+		.plan {
+			background-color: lighten($c-green, 43%)
+		}
+
+		&:before {
+			content: url(../images/leaf-rs.png);
+			position: absolute;
+			display: block;
+			width: 32px;
+			height: 94px;
+			right: -32px;
+			top: 70px;
+		}
 	}
 }
 
@@ -44,6 +77,10 @@ $s-pricing-default: 10px;
 			font-size: 1.7em;
 			margin-right: 0.1em;
 		}
+	}
+
+	strong {
+		color: $c-olive-dark;
 	}
 
 	ul {
