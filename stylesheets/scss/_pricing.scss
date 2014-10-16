@@ -96,6 +96,16 @@ $s-pricing-default: 10px;
 				color: $c-green-dark;
 			}
 		}
+
+		&:after {
+			content: url(../images/bg-feature-head-leaf.png);
+			position: absolute;
+			width: 161px;
+			height: 43px;
+			top: 0;
+			left: 50%;
+			margin-left: 300px; 
+		}
 	}
 
 	.page.top {

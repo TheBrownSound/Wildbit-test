@@ -802,6 +802,14 @@ footer #help small,
       font-size: 1.15em; }
       #pricing-new .plans-head h2 a {
         color: #389458; }
+    #pricing-new .plans-head:after {
+      content: url(../images/bg-feature-head-leaf.png);
+      position: absolute;
+      width: 161px;
+      height: 43px;
+      top: 0;
+      left: 50%;
+      margin-left: 300px; }
   #pricing-new .page.top {
     margin-top: -120px;
     background-color: #FFF;
