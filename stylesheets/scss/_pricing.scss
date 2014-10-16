@@ -17,7 +17,7 @@ $s-pricing-default: 10px;
 	h1 {
 		font-size: 1.2em;
 		font-weight: normal;
-		margin: 0 $s-pricing-default / 2 $s-pricing-default * 4;
+		margin: 0 $s-pricing-default / 2 $s-pricing-default * 2;
 	}
 }
 
@@ -64,16 +64,17 @@ $s-pricing-default: 10px;
 }
 
 #pricing-new {
-	$header-height: 200px;
-	$header-bleed: 40px;
+	$header-height: 400px;
+	$header-padding: 40px;
+	$header-bleed: 120px;
 
 	/* Plans header */
 	.plans-head {
 		position: relative;
 		text-align: center;
 		background: #e2f7cd url(../images/bg-page-pattern.png) no-repeat 50% -11px;
-		height: $header-height - $header-bleed;
-		padding: $header-bleed 0 0;
+		height: $header-height - $header-padding;
+		padding: $header-padding 0 0;
 
 		h1 {
 			margin: 0 0.2em;
@@ -108,14 +109,16 @@ $s-pricing-default: 10px;
 		padding: 0;
 		width: 100%;
 
-		@include border-radius($container-radius $container-radius 0 0)
+		@include border-radius($container-radius $container-radius 0 0);
+
+		.container {
+			position: relative;
+			top: -$header-bleed;
+			margin-bottom: -$header-bleed;
+		}
 	}
 
-	.container {
-		position: relative;
-		top: -30px;
-		margin-bottom: -30px;
-	}
+
 
 	/* Plan Labels */
 	.free,
@@ -298,7 +301,7 @@ $s-pricing-default: 10px;
 		float: left;
 		width: 50%;
 	}
-	
+
 		h2 {
 			margin: 2em 20px .25em;
 			color: #444;

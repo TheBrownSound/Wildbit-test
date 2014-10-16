@@ -741,7 +741,7 @@ footer #help small,
   .plans h1 {
     font-size: 1.2em;
     font-weight: normal;
-    margin: 0 5px 40px; }
+    margin: 0 5px 20px; }
 
 .plan-wrap {
   float: left;
@@ -784,7 +784,7 @@ footer #help small,
     position: relative;
     text-align: center;
     background: #e2f7cd url(../images/bg-page-pattern.png) no-repeat 50% -11px;
-    height: 160px;
+    height: 360px;
     padding: 40px 0 0; }
     #pricing-new .plans-head h1 {
       margin: 0 0.2em;
@@ -803,19 +803,19 @@ footer #help small,
       #pricing-new .plans-head h2 a {
         color: #389458; }
   #pricing-new .page.top {
-    margin-top: -40px;
+    margin-top: -120px;
     background-color: #FFF;
-    background-position: 50% -177px;
+    background-position: 50% -377px;
     position: relative;
     padding: 0;
     width: 100%;
     -webkit-border-radius: 23px 23px 0 0;
     -moz-border-radius: 23px 23px 0 0;
     border-radius: 23px 23px 0 0; }
-  #pricing-new .container {
-    position: relative;
-    top: -30px;
-    margin-bottom: -30px; }
+    #pricing-new .page.top .container {
+      position: relative;
+      top: -120px;
+      margin-bottom: -120px; }
   #pricing-new .free,
   #pricing-new .bronze,
   #pricing-new .silver,
