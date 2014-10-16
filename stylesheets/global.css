@@ -730,9 +730,7 @@ footer #help small,
   /* Plans header */
   /* Plans layout */
   /* Plan Labels */
-  /* 15-day Guarantee Ribbon */
   /* Referral notice */
-  /* FAQ */
   /* Features List */ }
   #pricing-new .plans-head {
     position: relative;
@@ -892,24 +890,6 @@ footer #help small,
     width: 14px;
     height: 14px;
     background: url(../images/i-blink.png) no-repeat 0 0; }
-  #pricing-new .guarantee-ribbon {
-    position: absolute;
-    top: 88px;
-    left: 50%;
-    width: 318px;
-    height: 160px;
-    margin-left: 311px;
-    background: url(../images/guarantee-ribbon.png) no-repeat;
-    overflow: hidden; }
-  #pricing-new .guarantee-ribbon h1,
-  #pricing-new .guarantee-ribbon p {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: normal;
-    text-indent: -9999em; }
   #pricing-new .square-button {
     display: block;
     border-width: 1px !important;
@@ -1049,21 +1029,6 @@ footer #help small,
       font-weight: bold;
       font-size: 1.1em;
       line-height: normal; }
-  #pricing-new #faq {
-    margin: 2em -20px 4em;
-    line-height: 1.5;
-    overflow: hidden; }
-    #pricing-new #faq .column {
-      float: left;
-      width: 50%; }
-    #pricing-new #faq h2 {
-      margin: 2em 20px .25em;
-      color: #444;
-      font-size: 1.1em; }
-    #pricing-new #faq p {
-      margin: 0 20px 1em;
-      color: #888;
-      line-height: 1.5; }
   #pricing-new .features-list {
     margin: 60px 0 40px;
     color: #222; }
@@ -1080,6 +1045,20 @@ footer #help small,
       #pricing-new .features-list .plan-standard li {
         float: left;
         width: 50%; }
+        #pricing-new .features-list .plan-standard li:before {
+          content: url("../images/i-checkmark-grey.svg");
+          margin-right: 4px;
+          width: 11px;
+          height: 10px;
+          display: inline-block; }
+        #pricing-new .features-list .plan-standard li.no-svg:before {
+          content: url("../images/i-checkmark-grey.png"); }
+        #pricing-new .features-list .plan-standard li.no-bullet:before {
+          content: "";
+          width: 0;
+          height: 0;
+          padding-left: 0;
+          background-image: none; }
     #pricing-new .features-list .plan-extra {
       display: inline-block;
       float: left;
@@ -1093,20 +1072,23 @@ footer #help small,
         margin: .3em 0 .6em;
         padding: 0;
         list-style: none; }
-        #pricing-new .features-list ul li:before {
-          content: url("../images/i-checkmark-grey.svg");
-          margin-right: 4px;
-          width: 11px;
-          height: 10px;
-          display: inline-block; }
-        #pricing-new .features-list ul li.no-svg:before {
-          content: url("../images/i-checkmark-grey.png"); }
-        #pricing-new .features-list ul li.no-bullet:before {
-          content: "";
-          width: 0;
-          height: 0;
-          padding-left: 0;
-          background-image: none; }
+
+/* FAQ */
+#faq {
+  margin: 2em -20px 4em;
+  line-height: 1.5;
+  overflow: hidden; }
+  #faq .column {
+    float: left;
+    width: 50%; }
+  #faq h2 {
+    margin: 2em 20px .25em;
+    color: #444;
+    font-size: 1.1em; }
+  #faq p {
+    margin: 0 20px 1em;
+    color: #888;
+    line-height: 1.5; }
 
 /* Customers Showcase */
 .customers-container {
