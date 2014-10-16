@@ -725,79 +725,10 @@ footer #help small,
 
 /* Pricing
 ============================== */
-/* Plans layout */
-.plans {
-  position: relative;
-  float: left;
-  display: inline-block;
-  margin: 0 0 20px;
-  padding: 0;
-  width: 50%; }
-  .plans:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden; }
-  .plans h1 {
-    font-size: 1.2em;
-    font-weight: normal;
-    margin: 0 5px 20px; }
-  .plans.plans-personal .plan {
-    background-color: #f3faf4; }
-  .plans.plans-personal:before {
-    content: url(../images/leaf-ls.png);
-    position: absolute;
-    display: block;
-    width: 48px;
-    height: 75px;
-    left: -48px;
-    bottom: 40px; }
-  .plans.plans-business .plan {
-    background-color: #e8f5eb; }
-  .plans.plans-business:before {
-    content: url(../images/leaf-rs.png);
-    position: absolute;
-    display: block;
-    width: 32px;
-    height: 94px;
-    right: -32px;
-    top: 70px; }
-
-.plan-wrap {
-  float: left;
-  width: 33.33%; }
-
-.plan {
-  background-color: #FFFFFF;
-  border: 1px solid #cccccc;
-  margin-right: -1px;
-  color: #8A8A8A;
-  padding: 0 10px 10px; }
-  .plan .plan-name {
-    margin-top: -10px; }
-  .plan .plan-price {
-    text-transform: uppercase; }
-    .plan .plan-price strong {
-      color: #000;
-      font-size: 1.7em;
-      margin-right: 0.1em; }
-  .plan strong {
-    color: #899a84; }
-  .plan ul {
-    margin: 0;
-    padding: 0;
-    min-height: 140px; }
-    .plan ul li {
-      list-style: none; }
-
-.link-custom-plans {
-  display: block;
-  clear: both;
-  text-align: center; }
-
 #pricing-new {
+  /* Pricing page variables */
   /* Plans header */
+  /* Plans layout */
   /* Plan Labels */
   /* 15-day Guarantee Ribbon */
   /* Referral notice */
@@ -833,6 +764,72 @@ footer #help small,
       top: 0;
       left: 50%;
       margin-left: 340px; }
+  #pricing-new .plans {
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 0;
+    width: 50%; }
+    #pricing-new .plans:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    #pricing-new .plans h1 {
+      font-size: 1.2em;
+      font-weight: normal;
+      margin: 0 5px 20px; }
+    #pricing-new .plans.plans-personal .plan {
+      background-color: #f3faf4; }
+    #pricing-new .plans.plans-personal:before {
+      content: url(../images/leaf-ls.png);
+      position: absolute;
+      display: block;
+      width: 48px;
+      height: 75px;
+      left: -48px;
+      bottom: 40px; }
+    #pricing-new .plans.plans-business .plan {
+      background-color: #e8f5eb; }
+    #pricing-new .plans.plans-business:before {
+      content: url(../images/leaf-rs.png);
+      position: absolute;
+      display: block;
+      width: 32px;
+      height: 94px;
+      right: -32px;
+      top: 70px; }
+  #pricing-new .plan-wrap {
+    float: left;
+    width: 33.33%; }
+  #pricing-new .plan {
+    background-color: #FFFFFF;
+    border: 1px solid #cccccc;
+    margin-right: -1px;
+    color: #8A8A8A;
+    padding: 0 10px 10px; }
+    #pricing-new .plan .plan-name {
+      margin-top: -10px; }
+    #pricing-new .plan .plan-price {
+      text-transform: uppercase; }
+      #pricing-new .plan .plan-price strong {
+        color: #000;
+        font-size: 1.7em;
+        margin-right: 0.1em; }
+    #pricing-new .plan strong {
+      color: #899a84; }
+    #pricing-new .plan ul {
+      margin: 0;
+      padding: 0;
+      min-height: 140px; }
+      #pricing-new .plan ul li {
+        list-style: none; }
+  #pricing-new .link-custom-plans {
+    display: block;
+    clear: both;
+    text-align: center; }
   #pricing-new .page.top {
     margin-top: -130px;
     background-color: #FFF;
