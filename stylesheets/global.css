@@ -820,8 +820,7 @@ footer #help small,
       color: #899a84; }
     #pricing-new .plan ul {
       margin: 0;
-      padding: 0;
-      min-height: 140px; }
+      padding: 0 0 10px; }
       #pricing-new .plan ul li {
         list-style: none; }
   #pricing-new .link-custom-plans {
