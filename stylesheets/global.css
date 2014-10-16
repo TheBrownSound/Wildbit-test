@@ -1064,41 +1064,25 @@ footer #help small,
       font-size: 1.1em;
       line-height: normal; }
   #pricing-new .features-list {
-    margin: 60px 0 40px;
+    margin-bottom: 40px;
     color: #222; }
-    #pricing-new .features-list:after {
-      content: ".";
-      display: block;
-      height: 0;
-      clear: both;
-      visibility: hidden; }
-    #pricing-new .features-list .features-standard {
-      display: inline-block;
+    #pricing-new .features-list .features-standard li {
       float: left;
-      width: 55%; }
-      #pricing-new .features-list .features-standard li {
-        float: left;
-        width: 50%; }
-        #pricing-new .features-list .features-standard li:before {
-          content: url("../images/i-checkmark-grey.svg");
-          margin-right: 4px;
-          width: 11px;
-          height: 10px;
-          display: inline-block; }
-        #pricing-new .features-list .features-standard li.no-svg:before {
-          content: url("../images/i-checkmark-grey.png"); }
-        #pricing-new .features-list .features-standard li.no-bullet:before {
-          content: "";
-          width: 0;
-          height: 0;
-          padding-left: 0;
-          background-image: none; }
-    #pricing-new .features-list .features-extra {
-      display: inline-block;
-      float: left;
-      width: 45%; }
-      #pricing-new .features-list .features-extra h2, #pricing-new .features-list .features-extra ul {
-        margin-left: 10px; }
+      width: 25%; }
+      #pricing-new .features-list .features-standard li:before {
+        content: url("../images/i-checkmark-grey.svg");
+        margin-right: 4px;
+        width: 11px;
+        height: 10px;
+        display: inline-block; }
+      #pricing-new .features-list .features-standard li.no-svg:before {
+        content: url("../images/i-checkmark-grey.png"); }
+      #pricing-new .features-list .features-standard li.no-bullet:before {
+        content: "";
+        width: 0;
+        height: 0;
+        padding-left: 0;
+        background-image: none; }
     #pricing-new .features-list ul {
       margin: 0;
       overflow: hidden; }

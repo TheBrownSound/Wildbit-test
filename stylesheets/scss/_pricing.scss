@@ -352,17 +352,13 @@
 
 	/* Features List */
 	.features-list {
-		margin: 60px 0 40px;
+		margin-bottom: 40px;
 		color: #222;
-		@include clearfix;
 
 		.features-standard {
-			display: inline-block;
-			float: left;
-			width: 55%;
 			li {
 				float: left;
-				width: 50%;
+				width: 25%;
 
 				&:before {
 					content: url('../images/i-checkmark-grey.svg');
@@ -387,12 +383,7 @@
 		}
 
 		.features-extra {
-			display: inline-block;
-			float: left;
-			width: 45%;
-			h2, ul {
-				margin-left: $s-pricing-default;
-			}
+
 		}
 
 		ul {
