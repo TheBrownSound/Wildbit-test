@@ -22,6 +22,8 @@ Increased text contrast and changed the call to action button to green to stand 
 
 Emphasized the silver plan which is the clear "sweet spot". Gives the user a focal point to draw thier attention. Without a focal point the user is forced to attempt to evaluate all the plans.
 
+Reordered plan features based on perceived level of importance when looking for project hosting.
+
 Removed the "servers/repository" item from plan descriptions. Did multiple usability tests on various developers. Was overwhelmingly confusing even with the tooltip and didn't contribute helping the user make a plan decision.
 
 Moved the gold, platinum and diamond extra features down below the standard features. Existing layout did a good job of connecting the features to the individual plans, but at the expense of adding extra noise.
