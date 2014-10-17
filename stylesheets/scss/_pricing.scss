@@ -9,6 +9,12 @@
 	$header-padding: 36px;
 	$header-bleed: 130px;
 
+	h1 {
+		font-size: 1.8rem;
+		font-weight: normal;
+		-webkit-font-smoothing: antialiased;
+	}
+
 	/* Plans header */
 	.plans-head {
 		position: relative;
@@ -22,9 +28,6 @@
 			padding: 0;
 			color: #064;
 			text-shadow: 0 1px 1px #FFF;
-			-webkit-font-smoothing: antialiased;
-			font-size: 30px;
-			font-weight: normal;
 		}
 		h2 {
 			margin: 0;
@@ -60,6 +63,7 @@
 		display: inline-block;
 		margin: 0 0 $s-pricing-default * 2;
 		padding: 0;
+		text-align: center;
 
 		@include clearfix;
 
@@ -117,6 +121,7 @@
 		margin: $s-pricing-default * 2 -1px 0 0;
 		color: darken($c-olive-dark, 30%);
 		padding: 0 $s-pricing-default $s-pricing-default;
+		text-align: left;
 
 		.plan-name {
 			margin-top: -$s-pricing-default;
@@ -163,6 +168,13 @@
 		}
 	}
 
+	.plans-other {
+		padding: 20px 0 40px;
+		display: block;
+		text-align: center;
+		clear: both;
+	}
+
 	.link-custom-plans {
 		display: block;
 		clear: both;
@@ -187,6 +199,7 @@
 			position: relative;
 			top: -$header-bleed;
 			margin-bottom: -$header-bleed;
+			@include clearfix;
 		}
 	}
 
@@ -382,10 +395,25 @@
 	}
 
 	.features-extra {
-		background-color: $c-olive-light;
+		color: $c-brown;
+		display: block;
+		background: $c-olive-light url(../images/bg-page-pattern.png) no-repeat 50% -11px;
 		border: 1px solid $c-olive;
-		padding: $s-pricing-default;
-		@include border-radius(10px);
+		padding: 0 $s-pricing-default * 2 $s-pricing-default;
+		text-align: left;
+		@include border-radius(4px);
+
+		h2 {
+			color: $c-brown;
+		}
+
+		ul li {
+			display: inline-block;
+			float: left;
+			margin-left: 0;
+			margin-right: 0;
+			width: 50%;
+		}
 	}
 
 }
@@ -403,11 +431,17 @@
 		width: 50%;
 	}
 
+	h1 {
+		text-align: center;
+		color: #444;
+	}
+
 	h2 {
 		margin: 2em 20px .25em;
 		color: #444;
 		font-size: 1.1em;
 	}
+
 	p {
 		margin: 0 20px 1em;
 		color: #888;

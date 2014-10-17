@@ -732,6 +732,10 @@ footer #help small,
   /* Plan Labels */
   /* Referral notice */
   /* Features List */ }
+  #pricing-new h1 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased; }
   #pricing-new .plans-head {
     position: relative;
     text-align: center;
@@ -742,10 +746,7 @@ footer #help small,
       margin: 0 0.2em;
       padding: 0;
       color: #064;
-      text-shadow: 0 1px 1px #FFF;
-      -webkit-font-smoothing: antialiased;
-      font-size: 30px;
-      font-weight: normal; }
+      text-shadow: 0 1px 1px #FFF; }
     #pricing-new .plans-head h2 {
       margin: 0;
       padding: 0;
@@ -773,7 +774,8 @@ footer #help small,
     float: left;
     display: inline-block;
     margin: 0 0 20px;
-    padding: 0; }
+    padding: 0;
+    text-align: center; }
     #pricing-new .plans:after {
       content: ".";
       display: block;
@@ -817,7 +819,8 @@ footer #help small,
     border: 1px solid #cccccc;
     margin: 20px -1px 0 0;
     color: #3f493c;
-    padding: 0 10px 10px; }
+    padding: 0 10px 10px;
+    text-align: left; }
     #pricing-new .plan .plan-name {
       margin-top: -10px; }
     #pricing-new .plan .plan-price {
@@ -847,6 +850,11 @@ footer #help small,
         margin-top: -18px; }
       #pricing-new .plan.prioritize ul {
         margin-bottom: 40px; }
+  #pricing-new .plans-other {
+    padding: 20px 0 40px;
+    display: block;
+    text-align: center;
+    clear: both; }
   #pricing-new .link-custom-plans {
     display: block;
     clear: both;
@@ -868,6 +876,12 @@ footer #help small,
       position: relative;
       top: -130px;
       margin-bottom: -130px; }
+      #pricing-new .page.top .container:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
   #pricing-new .free,
   #pricing-new .bronze,
   #pricing-new .silver,
@@ -1080,12 +1094,23 @@ footer #help small,
       padding-left: 0;
       background-image: none; }
   #pricing-new .features-extra {
-    background-color: #eff5ee;
+    color: #534b38;
+    display: block;
+    background: #eff5ee url(../images/bg-page-pattern.png) no-repeat 50% -11px;
     border: 1px solid #d7e7db;
-    padding: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px; }
+    padding: 0 20px 10px;
+    text-align: left;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+    #pricing-new .features-extra h2 {
+      color: #534b38; }
+    #pricing-new .features-extra ul li {
+      display: inline-block;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+      width: 50%; }
 
 /* FAQ */
 #faq {
@@ -1095,6 +1120,9 @@ footer #help small,
   #faq .column {
     float: left;
     width: 50%; }
+  #faq h1 {
+    text-align: center;
+    color: #444; }
   #faq h2 {
     margin: 2em 20px .25em;
     color: #444;
