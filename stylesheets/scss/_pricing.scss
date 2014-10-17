@@ -8,6 +8,7 @@
 	$header-bleed: 130px;
 
 	h1 {
+		font-family: $f-accent;
 		font-size: 1.8rem;
 		font-weight: normal;
 		-webkit-font-smoothing: antialiased;
@@ -28,6 +29,7 @@
 			text-shadow: 0 1px 1px #FFF;
 		}
 		h2 {
+			font-family: $f-accent;
 			margin: 0;
 			padding: 0;
 			color: #6A8066;
