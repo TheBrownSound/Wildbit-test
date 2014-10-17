@@ -255,57 +255,6 @@
 		text-align: center;
 	}
 
-	.square-button--big {
-		border-width: 2px;
-		@include border-radius(4px);
-		padding: .8em 1.5em 1em;
-		font-size: 21px;
-		@include box-shadow(0 0 0 3px rgba(0, 0, 0, .08));
-
-		&:hover {
-			@include box-shadow(0 0 0 3px rgba(0, 0, 0, .12));
-		}
-
-		small {
-			display: block;
-			margin-top: .4em;
-			font-weight: normal;
-			font-size: 14px;
-		}
-	}
-
-	.square-button.t-grey {
-		border-color: #9F9F9F;
-		background-color: #DADADA;
-		@include linear-gradient(#FFFFFF, #DADADA);
-		color: #444 !important;
-		@include box-shadow(0 0 0 2px rgba(0, 0, 0, .08));
-
-		&:hover {
-			border-color: #888;
-			background-color: #D0D0D0;
-			@include linear-gradient(#FFFFFF, #D0D0D0);
-			color: #111 !important;
-			@include box-shadow(0 0 0 2px rgba(0, 0, 0, .12));
-		}
-	}
-
-	.square-button.t-purple {
-		border-color: #9F9FA6;
-		background-color: #DADAE0;
-		@include linear-gradient(#FFFFFF, #DADAE0);
-		color: #445 !important;
-		@include box-shadow(0 0 0 2px rgba(76, 76, 102, .10));
-
-		&:hover {
-			border-color: #8E8E9E;
-			background-color: #D1D1DE;
-			@include linear-gradient(#FFFFFF, #D1D1DE);
-			color: #112 !important;
-			@include box-shadow(0 0 0 2px rgba(0, 0, 0, .13));
-		}
-	}
-
 	.square-button.t-green {
 		border-color: #0f9926;
 		background-color: #42a653;
@@ -323,14 +272,6 @@
 
 		small {
 			color: #c4f7ba;
-		}
-	}
-
-	.square-button--big.t-green {
-		@include box-shadow(inset 0 0 4px rgba(#FFF, .75), 0 0 0 4px rgba(#000, .08));
-
-		&:hover {
-			@include box-shadow(inset 0 0 4px #FFF, 0 0 0 4px rgba(#000, .10));
 		}
 	}
 
