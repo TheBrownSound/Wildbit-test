@@ -55,6 +55,7 @@
 	/* Plans layout */
 	.plans-lineup {
 		@include clearfix;
+		text-align: center;
 	}
 
 	.plans {
@@ -63,7 +64,7 @@
 		display: inline-block;
 		margin: 0 0 $s-pricing-default * 2;
 		padding: 0;
-		text-align: center;
+		text-align: left;
 
 		@include clearfix;
 
@@ -121,7 +122,6 @@
 		margin: $s-pricing-default * 2 -1px 0 0;
 		color: darken($c-olive-dark, 30%);
 		padding: 0 $s-pricing-default $s-pricing-default;
-		text-align: left;
 
 		.plan-name {
 			margin-top: -$s-pricing-default;
@@ -169,10 +169,16 @@
 	}
 
 	.plans-other {
-		padding: 20px 0 40px;
-		display: block;
-		text-align: center;
+		margin: $s-pricing-default 0 $s-pricing-default * 2;
+		padding: $s-pricing-default * 2;
+		display: inline-block;
 		clear: both;
+		border: 1px dashed $c-olive-dark;
+		@include border-radius(4px);
+
+		p {
+			margin: $s-pricing-default / 2 0;
+		}
 	}
 
 	.link-custom-plans {
