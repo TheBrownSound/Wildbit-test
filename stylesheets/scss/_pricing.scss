@@ -3,8 +3,6 @@
 
 #pricing-new {
 	/* Pricing page variables */
-	$s-pricing-default: 10px; // default spacing unit
-
 	$header-height: 400px;
 	$header-padding: 36px;
 	$header-bleed: 130px;
@@ -62,7 +60,7 @@
 		position: relative;
 		float: left;
 		display: inline-block;
-		margin: 0 0 $s-pricing-default * 2;
+		margin: 0 0 $s-default * 2;
 		padding: 0;
 		text-align: left;
 
@@ -71,7 +69,7 @@
 		h1 {
 			font-size: 1.2em;
 			font-weight: normal;
-			margin: 0 2px $s-pricing-default * 2;
+			margin: 0 2px $s-default * 2;
 		}
 
 		&.plans-personal {
@@ -119,17 +117,17 @@
 	.plan {
 		background-color: lighten($c-green, 43%);
 		border: 1px solid $c-grey;
-		margin: $s-pricing-default * 2 -1px 0 0;
+		margin: $s-default * 2 -1px 0 0;
 		color: darken($c-olive-dark, 30%);
-		padding: 0 $s-pricing-default $s-pricing-default;
+		padding: 0 $s-default $s-default;
 
 		.plan-name {
-			margin-top: -$s-pricing-default;
+			margin-top: -$s-default;
 		}
 
 		.plan-price {
 			text-transform: uppercase;
-			margin: $s-pricing-default;
+			margin: $s-default;
 			strong {
 				font-size: 1.8em;
 				margin-right: 0.1em;
@@ -141,7 +139,7 @@
 		}
 
 		ul {
-			margin: $s-pricing-default;
+			margin: $s-default;
 			padding: 0;
 			min-height: 110px;
 
@@ -159,7 +157,7 @@
 			@include box-shadow(0px 0px 2px $c-green);
 
 			.plan-name {
-				margin-top: $s-pricing-default * -1.8;
+				margin-top: $s-default * -1.8;
 			}
 
 			ul {
@@ -169,15 +167,15 @@
 	}
 
 	.plans-other {
-		margin: $s-pricing-default 0 $s-pricing-default * 2;
-		padding: $s-pricing-default * 2;
+		margin: $s-default 0 $s-default * 2;
+		padding: $s-default * 2;
 		display: inline-block;
 		clear: both;
 		border: 1px dashed $c-olive-dark;
 		@include border-radius(4px);
 
 		p {
-			margin: $s-pricing-default / 2 0;
+			margin: $s-default / 2 0;
 		}
 	}
 
@@ -405,7 +403,7 @@
 		display: block;
 		background: $c-olive-light url(../images/bg-page-pattern.png) no-repeat 50% -11px;
 		border: 1px solid $c-olive;
-		padding: 0 $s-pricing-default * 2 $s-pricing-default;
+		padding: 0 $s-default * 2 $s-default;
 		text-align: left;
 		@include border-radius(4px);
 
